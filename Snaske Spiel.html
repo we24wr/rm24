@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Spiel - Multiplayer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Snake Spiel - Multiplayer</h1>
+  
+  <!-- Anleitung -->
+  <div id="instructions">
+    <h3>Spielanleitung:</h3>
+    <ul>
+      <li><strong>Spieler 1</strong>: Steuerung mit den Pfeiltasten (↑, ↓, ←, →)</li>
+      <li><strong>Spieler 2</strong>: Steuerung mit W, A, S, D</li>
+      <li>Fresse das rote Essen, um zu wachsen und Punkte zu sammeln!</li>
+      <li>Vermeide es, die Wände oder deinen eigenen Körper zu berühren!</li>
+    </ul>
+  </div>
+
+  <!-- Modus-Auswahl -->
+  <div id="modeSelection">
+    <button id="onePlayerButton">1 Spieler</button>
+    <button id="twoPlayerButton">2 Spieler</button>
+  </div>
+  
+  <!-- Start Button -->
+  <button id="startButton" disabled>Spiel starten</button>
+  
+  <!-- Punktestand -->
+  <div id="scoreboard">
+    <h3>Spielstand:</h3>
+    <p>Spieler 1: <span id="score1">0</span></p>
+    <p>Spieler 2: <span id="score2">0</span></p>
+    <p>Höchststand: <span id="highScore">0</span></p>
+  </div>
+
+  <canvas id="gameCanvas" width="400" height="400"></canvas>
+  <script src="game.js"></script>
+</body>
+</html>
+
